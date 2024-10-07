@@ -9,3 +9,53 @@
 body {
   font-family: 'Poppins', sans-serif;
 }
+
+h1,h2{
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex_space{
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    border: none;
+    background: none;
+    outline: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.primary-btn{
+    padding: 15px 40px;
+    background-color: #7fc14d;
+    font-weight: bold;
+    color:white;
+}
+
+.secondary-btn {
+    padding: 15px 40px;
+    background: none;
+    border: 2px solid white;
+    font-weight: bold;
+    color: white;
+  }
+
+  .container {
+    max-width: 85%;
+    margin: auto;
+  }
