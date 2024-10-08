@@ -625,6 +625,10 @@ h1 span {
     max-width: 300px;
 }
 
+.logo-box img{
+    width: 300px;
+}
+
 .footer-box h2 {
     margin-bottom: 20px;
     font-size: 20px;
