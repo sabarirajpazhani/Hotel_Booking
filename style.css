@@ -32,6 +32,11 @@ li{
     justify-content: space-between;
 }
 
+.logo img {
+    width: 120px; /* Adjust width as necessary */
+    height: auto; /* Maintains aspect ratio */
+  }
+
 button{
     border: none;
     background: none;
@@ -42,9 +47,10 @@ button{
 
 .primary-btn{
     padding: 15px 40px;
-    background-color: #7fc14d;
+    background-color: #B8860B;
     font-weight: bold;
     color:white;
+    border-radius: 5px;
 }
 
 .secondary-btn {
@@ -72,10 +78,6 @@ header img{
     
 }
 
-header ul {
-    display: inline-block;
-}
-
 header ul li{
     display: inline-block;
     text-transform: uppercase;
@@ -88,11 +90,11 @@ header ul li a{
 }
 
 header ul li a:hover{
-    color: #7fc14d;
+    color: #B8860B;
 }
 
 header i{
-    margin:20px;
+    margin:0 20px;
 }
 
 header button {
@@ -110,7 +112,7 @@ header .navlinks span{
         left: 0;
         width: 100%;
         height: 100vh;
-        background: #009f7f;
+        background: #B8860B;
         overflow: hidden;
         transition: max-height 0.5s;
         text-align: center;
@@ -137,51 +139,62 @@ header .navlinks span{
     }
 }
 
+ 
 /* home */
-
-.home{
+.home {
+    position: relative;
     height: 100vh;
-    color: black;
-}
-
-.home img{
+    overflow: hidden;
+  }
+  
+  .home img {
     width: 100%;
     height: 100vh;
-}
-
-.home .text{
+  }
+  
+  .home .text {
     position: absolute;
     top: 35%;
     left: 5%;
-}
+    color: white;
+    max-width: 500px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+  }
 
-.home .text h1{
+
+  .home .text h1 {
     font-size: 80px;
-    font-family: sans-serif;
+    font-family: serif;
     font-weight: 400;
-}
-
-.home p{
+  }
+  
+  .home p {
     margin: 20px 0;
-}
-
-.home button{
+  }
+  
+  .home button {
     margin-right: 20px;
-}
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .primary-btn {
+    background-color: #B8860B;
+    color: white;
+  }
 
-.owl-nav .owl-prev, .owl-nav .owl-next{
-    position: absolute;
-    top: 40%;
-    height: 50px;
-    width: 50px;
-    background: rgba(0, 0, 0, 0.5);
-    color: #000;
-}
 
-.owl-nav .owl-prev{
-    left: 0;
-}
+  .secondary-btn {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+  }
 
-.owl-nav .owl-next{
-    right: 0;
-}
+  .secondary-btn:hover{
+    background-color: #B8860B;
+    color: white;
+  }
+  
+  
+  
+
