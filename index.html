@@ -47,6 +47,7 @@
         }
     </script>
 
+    <!--Home Page-->
     <section class="home">
       <div class="content">
         <img src="Assets/home2.jpg" alt="Holiday Destination">
@@ -60,6 +61,116 @@
         </div>
       </div>
     </section>
+
+    <section class="book">
+      <div class="title">
+        <h1><span>Book</span> Your Room</h1>
+      </div>
+      <div class="container">
+        <div class="form">
+          <form>
+            <div class="form-grid">
+              <!-- Name Field -->
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your full name" required>
+              </div>
+    
+              <!-- Email Field -->
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+              </div>
+    
+              <!-- Phone Number Field -->
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" required>
+              </div>
+    
+              <!-- Guest Contact Number Field -->
+              <div class="form-group">
+                <label for="guest-phone">Alternate Guest Contact Number</label>
+                <input type="tel" id="guest-phone" placeholder="Enter alternate guest contact" pattern="[0-9]{10}" required>
+              </div>
+    
+              <!-- Room Type Field -->
+              <div class="form-group">
+                <label for="room-type">Room Type</label>
+                <select id="room-type" required>
+                  <option value="">Select Room Type</option>
+                  <option value="Standard">Standard Room (1-2 People)</option>
+                  <option value="Family">Family Room (1-4 People)</option>
+                  <option value="Private">Private Room (1-3 People)</option>
+                  <option value="Mix">Mix Dorm Room (6 People)</option>
+                  <option value="Female">Female Dorm Room (6 People)</option>
+                  <option value="Male">Male Dorm Room (6 People)</option>
+                </select>
+              </div>
+    
+              <!-- Arrival Date and Time -->
+              <div class="form-group">
+                <label for="arrival">Arrival Date</label>
+                <input type="date" id="arrival" required>
+              </div>
+    
+              <div class="form-group">
+                <label for="arrival-time">Arrival Time</label>
+                <input type="time" id="arrival-time" required>
+              </div>
+    
+              <!-- Departure Date -->
+              <div class="form-group">
+                <label for="departure">Departure Date</label>
+                <input type="date" id="departure" required>
+              </div>
+    
+              <!-- Number of Guests -->
+              <div class="form-group">
+                <label for="guests">Number of Guests</label>
+                <input type="number" id="guests" placeholder="Number of guests" min="1" required>
+              </div>
+    
+              <!-- Special Requests -->
+              <div class="form-group">
+                <label for="requests">Special Requests</label>
+                <textarea id="requests" rows="4" placeholder="Any special requests?"></textarea>
+              </div>
+    
+              <!-- Payment Method -->
+              <div class="form-group">
+                <label for="payment">Payment Method</label>
+                <select id="payment" required>
+                  <option value="">Select Payment Method</option>
+                  <option value="CreditCard">Credit Card</option>
+                  <option value="DebitCard">Debit Card</option>
+                  <option value="PayPal">PayPal</option>
+                  <option value="Cash">Cash on Arrival</option>
+                </select>
+              </div>
+    
+              <!-- Free Pickup -->
+              <div class="form-group">
+                <label for="pickup">Free Pickup?</label>
+                <div class="radio-group">
+                  <input type="radio" id="yes" name="pickup" value="yes" required>
+                  <label for="yes">Yes, pick me up on arrival</label><br>
+                  <input type="radio" id="no" name="pickup" value="no" required>
+                  <label for="no">No, I’ll arrange my own transport</label>
+                </div>
+              </div>
+    
+              <!-- Submit Button -->
+              <div class="form-group full-width">
+                <input  class="submit" type="submit" value="CHECK AVAILABILITY">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    
+    
 
 </body>
 </html>
