@@ -74,9 +74,9 @@ button{
   /* header */
 
 header{
-height:10vh;
-line-height: 10vh;
-padding: 0 20px;
+    height:10vh;
+    line-height: 10vh;
+    padding: 0 20px;
 }
 
 header img{
@@ -96,7 +96,7 @@ header ul li a{
 }
 
 header ul li a:hover{
-    color: #000000;
+    color: #DAA520;
 }
 
 header i{
@@ -148,7 +148,6 @@ header .navlinks span{
  
 /* home */
 .home {
-    position: relative;
     height: 100vh;
     overflow: hidden;
   }
@@ -206,7 +205,7 @@ header .navlinks span{
 
 
 section.book{
-    background-color: #f8f8f8;
+    background-color: #595757;
     padding: 20px;
 }
 
@@ -219,13 +218,12 @@ section.book{
     text-align: center;
     margin-bottom: 20px;
     font-size: larger;
+    color: white;
 }
 
 h1 span {
     color: #DAA520;
 }
-
-
 
 .form {
     background-color: #DAA520;
@@ -283,3 +281,80 @@ h1 span {
       grid-template-columns: 1fr;
     }
 }
+
+
+/* About */
+.left, .right {
+    width: 50%;
+    padding: 30px;
+}
+
+.about{
+    top: 40px;
+    position: relative;
+    margin-top: 30px;
+}
+  
+.heading h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: #DAA520;
+}
+
+.heading h2 {
+    font-size: 45px;
+    font-family: serif;
+    font-weight: 400;
+}
+
+.about .left{
+    margin-top: 30px;
+}
+
+.about .right {
+    width: 50%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about img {
+    height: 300px; 
+    max-width: 400px;
+}
+
+.about p{
+    font-size: 15px;
+}
+
+.about button{
+    margin: 30px 0;
+}
+
+@media (max-width: 768px) {
+    .about .container {
+        display: flex; 
+        flex-direction: column;
+        align-items: center; 
+    }
+    .about .left {
+        width: 100%;
+        text-align: center; 
+        margin-top: 20px; 
+    }
+    .about .right {
+        width: 100%; 
+        text-align: center;
+        margin-bottom: 20px; 
+    }
+    .about img {
+        max-width: 100%; 
+        height: auto; 
+    }
+}
+
+
+
+
+
